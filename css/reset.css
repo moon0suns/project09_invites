@@ -36,7 +36,6 @@ body {
     font-family: 'Roboto', 'Noto Sans KR', sans-serif;
 }
 
-/* 시각장애인을 위한 대체 텍스트 */
 .blind {
     position: absolute;
     clip: rect(0 0 0 0);

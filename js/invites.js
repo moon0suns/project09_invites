@@ -58,4 +58,27 @@ $(function () {
 
     AOS.init();
 
+    // 📳 반응형
+
+    // 2 서부메뉴 누르면 나오게
+    $('.header .gnb>ul>li').on('click', function (e) {
+        if ($('.header .gnb').hasClass('on')) {
+            e.preventDefault();
+            $(this).find('.sub').stop().slideToggle();
+        }
+
+    });
+
+    // 3 클릭햇을때 메뉴 나오게
+    $('.mopen').on('click', function () {
+        $(this).toggleClass('on')
+        $('.gnb').toggleClass('on')
+    });
+
+
+    //pc버전에서 오류작동 잡기
+    $(window).on('resize', function () {
+        $('.header .gnb').removeClass('on');
+        $('.sub').removeAttr('style');
+    })
 })
