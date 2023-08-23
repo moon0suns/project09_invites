@@ -263,7 +263,7 @@
 
         background: linear-gradient(143deg, #031f61 3%, #068080 73%);
         height: 100vh;
-        width: 410px;
+        width: calc(100% - 60px);
         padding: 0;
         transition: .5s;
     }
