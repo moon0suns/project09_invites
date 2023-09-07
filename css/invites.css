@@ -254,6 +254,9 @@
         background: url(../images/logo_biocore.svg)no-repeat;
     }
 
+    .header.ox:hover .logo {
+        background: url(../images/logo_biocore_white.svg)no-repeat;
+    }
 
     .header .gnb {
         position: fixed;

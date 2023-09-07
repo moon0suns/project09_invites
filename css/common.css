@@ -2,12 +2,10 @@ html {
     font-size: 62.5%;
 }
 
-/* 1px = 1px */
 
 @media (max-width: 540px) {
     html {
         font-size: 0.25641025641vw;
-        /* 390 size에 맞춤 (16/390*6.25/100) */
     }
 }
 
@@ -16,9 +14,9 @@ body {
     word-break: keep-all;
 }
 
-/* line-height : 3px + 3px */
 p {
     line-height: 1.375;
+    /* line-height : 3px + 3px */
 }
 
 .inner {

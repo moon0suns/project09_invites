@@ -63,9 +63,12 @@ $(function () {
 
     });
 
+
     $('.mopen').on('click', function () {
+        let st = $('.header').hasClass('on');
         $(this).toggleClass('on')
-        $('.gnb').toggleClass('on')
+        $('.gnb').toggleClass('on');
+        $('.header').toggleClass('ox');
     });
 
 
